@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf8">
+    <title>Tour du monde</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/styleBase.css') }}">
+    {% block stylesheet %}{% endblock %}
+    <script src="https://kit.fontawesome.com/21629f9ec4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+</head>
+<body>
+<header>
+    <!-- haut du header -->
+    <div class="topHeader">
+        <img src="{{ asset('assets/img/logoTDM.png')}}" alt="logo" class="logoTop">
+        <h1>Tour du monde</h1>
+        <div class="rightHeader">
+            <a href="pages/article_form.php">Connexion</a>
+            <h3 class="recherche">Recherche</h3>
+            <input type="text" class="barreRecherche">
+        </div>
+    </div>
+    <!-- haut du header -->
+
+    <!-- navbar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Présentation</a></li>
+            <li>
+                <a href="#" id="drop">Destinations</a>
+                <i class="fas fa-sort-down" id="dropdown1"></i>
+                <ul class="dropdownDestinations" id="dropdownDestinations">
+                    <li><a href="#">Afrique</a>
+                        <i class="fas fa-caret-right" id="dropdown2"></i>
+                        <ul class="dropdownAfrique dropdown" id="dropdownAfrique">
+                            <li><a href="#">Afrique du sud</a></li>
+                            <li><a href="#">Gabon</a></li>
+                            <li><a href="#">Mali</a></li>
+                            <li><a href="#">Maroc</a></li>
+                            <li><a href="#">Bénin</a></li>
+                            <li><a href="#">Sénégal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Amérique du nord</a>
+                        <i class="fas fa-caret-right" id="dropdown3"></i>
+                        <ul class="dropdownAmeriqueNord dropdown" id="dropdownAmeriqueNord">
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">Mexique</a></li>
+                            <li><a href="#">U.S.A</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Amérique du sud</a>
+                        <i class="fas fa-caret-right" id="dropdown4"></i>
+                        <ul class="dropdownAmeriqueSud dropdown" id="dropdownAmeriqueSud">
+                            <li><a href="#">Argentine</a></li>
+                            <li><a href="#">Bolivie</a></li>
+                            <li><a href="#">Brésil</a></li>
+                            <li><a href="#">Chili</a></li>
+                            <li><a href="#">Colombie</a></li>
+                            <li><a href="#">Pérou</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Asie</a>
+                        <i class="fas fa-caret-right" id="dropdown5"></i>
+                        <ul class="dropdownAsie dropdown" id="dropdownAsie">
+                            <li><a href="#">Birmanie</a></li>
+                            <li><a href="#">Cambodge</a></li>
+                            <li><a href="#">Népal</a></li>
+                            <li><a href="#">Philippines</a></li>
+                            <li><a href="#">Thaïlande</a></li>
+                            <li><a href="#">Vietnam</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Europe</a>
+                        <i class="fas fa-caret-right" id="dropdown6"></i>
+                        <ul class="dropdownEurope" id="dropdownEurope">
+                            <li><a href="#">Croatie</a></li>
+                            <li><a href="#">Espagne</a></li>
+                            <li><a href="#">France</a></li>
+                            <li><a href="#">Hongrie</a></li>
+                            <li><a href="#">Italie</a></li>
+                            <li><a href="#">Portugal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Océanie</a>
+                        <i class="fas fa-caret-right" id="dropdown7"></i>
+                        <ul class="dropdownOceanie" id="dropdownOceanie">
+                            <li><a href="#">Australie</a></li>
+                            <li><a href="#">Nouvelle Calédonie</a></li>
+                            <li><a href="#">Nouvelle Zélande</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Astuces & bons plans</a></li>
+            <li><a href="#">Communauté des voyageurs</a></li>
+            <li><a href="#">Vidéos</a></li>
+        </ul>
+    </nav>
+    <!-- navbar -->
+
+</header>
+
+<main>
+    <div class="backgroundImage">
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+</main>
+
+<footer>
+    <div class="footerPresentation"><a href="#" id="footerTitle1">Présentation</a></div>
+    <div class="footerDestinations"><a href="#" id="footerTitle2">Destinations</a>
+        <div class="footerDestinations1">
+            <div class="footerDestinationsLeft">
+                <a href="#">Afrique</a>
+                <a href="#">Amérique du nord</a>
+                <a href="#">Amérique du sud</a>
+            </div>
+            <div class="footerDestinationsRight">
+                <a href="#">Europe</a>
+                <a href="#">Asie</a>
+                <a href="#">Océanie</a>
+            </div>
+        </div>
+    </div>
+    <div class="footerAstuces"><a href="#" id="footerTitle3">Astuces & bons plans</a>
+        <a href="#">Par pays</a>
+        <a href="#">Par thèmes</a>
+        <a href="#">Par continent</a>
+    </div>
+    <div class="footerCommunaute"><a href="#" id="footerTitle4">Communauté</a>
+        <a href="#">Forum</a>
+        <a href="pages/article_form.php">Connexion</a>
+        <a href="#">Recherche membre</a>
+    </div>
+    <div class="footerVideos">
+        <a href="#" id="footerTitle5">Vidéos</a>
+    </div>
+    <div>
+        <a href="{{ path ('admin') }}">Admin</a>
+    </div>
+</footer>
+
+<script type="text/javascript" src="{{ asset('assets/js/script.js')}}"></script>
+</body>
+</html>
