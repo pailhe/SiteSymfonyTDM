@@ -1,1 +1,22 @@
-{{ form(formPaysView) }}
+{% extends 'base.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('assets/css/paysInsert.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="paysInsertTitle">Ajouter des continents et pays</h1>
+
+    {{ form_start(formPaysView, {'attr': {'class':'container'}}) }}
+
+    {{ form_label(formPaysView.continent, 'Nom du continent', {'label_attr': {'class':'labelPays'}}) }}
+    {{ form_widget(formPaysView.continent, {'attr': {'class':'inputPays'}}) }}
+
+    {{ form_label(formPaysView.nomPays, 'Nom du pays', {'label_attr': {'class':'labelPays'}}) }}
+    {{ form_widget(formPaysView.nomPays, {'attr': {'class':'inputPays'}}) }}
+
+    {{ form_label(formPaysView.enregistrer, 'Enregistrer', {'label_attr': {'class':'labelPays'}}) }}
+    {{ form_widget(formPaysView.enregistrer, {'attr': {'class':'inputPaysSubmit'}}) }}
+
+    {{ form_end(formPaysView) }}
+{% endblock %}

@@ -1,0 +1,52 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.articleInsertTitle{
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #505050;
+}
+
+.labelArticle{
+    color: #505050;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-size: 25px;
+}
+
+.inputDate{
+    margin: 0 auto;
+}
+
+.inputArticleSubmit{
+    width: 150px;
+    margin: 40px auto;
+}
+
+.inputUtilisateur, .inputCategorie, .inputPays{
+    width: 250px;
+    margin: 0 auto;
+}
+
+.inputContenu{
+    height: 350px;
+}
+
+.inputTitre{
+    width: 50%;
+    margin: 0 auto;
+}

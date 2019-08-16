@@ -127,12 +127,10 @@ header h1{
 
 /* main*/
 .backgroundImage{
-    height: 78vh;
     background-image: url("../img/planisphereWeb.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0.55;
 }
 /* main*/
 

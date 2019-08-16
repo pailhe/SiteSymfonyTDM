@@ -1,0 +1,38 @@
+.backgroundImage{
+    height: 500px;
+    width: 100%;
+    margin: auto auto;
+}
+
+.categorieInsertTitle{
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #505050;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.labelCategorie{
+    color: #505050;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-size: 25px;
+}
+
+.inputCategorieSubmit{
+    width: 150px;
+    margin: 50px auto;
+}
+
+.inputCategorie{
+    width: 50%;
+    margin: 0 auto;
+}

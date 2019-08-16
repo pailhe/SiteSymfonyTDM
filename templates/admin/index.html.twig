@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block stylesheet %}<link rel="stylesheet" href="{{ asset('assets/css/styleAdmin.css') }}">{% endblock %}
 
-{% block title %}Hello AdminController!{% endblock %}
+{% block title %}Bienvenue dans votre zone administrateur{% endblock %}
 
 {% block content %}
 
@@ -9,10 +9,11 @@
         <h1 class="adminTitle">Bienvenue cher administrateur</h1>
 
         <h2 class="adminSubTitle">Ici vous pourrez: </h2>
-        <ul>
-            <li><a href="{{ path ('article_form_insert') }}">Créer des articles</a></li>
-            <li><a href="{{ path ('categorie_form_insert') }}">Rajouter des catégories d'articles</a></li>
-            <li><a href="{{ path ('pays_form_insert') }}">Rajouter des Continents/Pays</a></li>
+        <ul class="adminList">
+            <li class="adminLink"><a href="{{ path ('article_form_insert') }}">Créer des articles</a></li>
+            <li class="adminLink"><a href="{{ path ('categorie_form_insert') }}">Rajouter des catégories
+                    d'articles</a></li>
+            <li class="adminLink"><a href="{{ path ('pays_form_insert') }}">Rajouter des Continents/Pays</a></li>
         </ul>
     </div>
 {% endblock %}

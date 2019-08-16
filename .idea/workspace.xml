@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65acc4bf-ec99-4f20-ad32-3dcf156ee62e" name="Default Changelist" comment="" />
+    <list default="true" id="65acc4bf-ec99-4f20-ad32-3dcf156ee62e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/articleInsert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/categorieInsert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/paysInsert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/styleAdmin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styleAdmin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/styleBase.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styleBase.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/planisphereWeb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/planisphereWeb.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/articleFormInsert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/articleFormInsert.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/categorieFormInsert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/categorieFormInsert.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/paysFormInsert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/paysFormInsert.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +28,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -128,6 +146,7 @@
   </component>
   <component name="ProjectId" id="1OYLxDMAotJiE16qhZeLWBd2L1P" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -169,10 +188,25 @@
       <workItem from="1563956048914" duration="5580000" />
       <workItem from="1564149829518" duration="286000" />
       <workItem from="1565004782703" duration="4219000" />
+      <workItem from="1565783164698" duration="3809000" />
+      <workItem from="1565871968168" duration="4509000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

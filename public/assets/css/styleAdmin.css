@@ -1,9 +1,28 @@
-h1{
-    opacity: 1;
-    text-align: center;
-    margin-top: 0;
+.backgroundImage{
+    height: 500px;
+    width: 100%;
+    margin: auto auto;
 }
 
-h2, a{
-    color: white;
+.adminTitle{
+    color: #505050;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.adminSubTitle, .adminList{
+    margin-left: 50px;
+    color: #505050;
+
+}
+
+a{
+    color: #505050;
+    text-decoration: none;
+}
+
+.adminLink{
+    margin-top: 20px;
 }
