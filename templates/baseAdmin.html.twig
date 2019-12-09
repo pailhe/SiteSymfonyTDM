@@ -28,22 +28,6 @@
         <ul class="navbar" id="navbar">
             <li><a href="{{ path('index') }}">Accueil</a></li>
             <li><a href="{{ path('presentation') }}">Présentation</a></li>
-            <li>
-                <a href="#" id="dropdown1">Destinations</a>
-                <i class="fas fa-sort-down" id="dropdown2"></i>
-                <ul class="dropdownDestinations" id="dropdownDestinations">
-                    <li>
-                        {% for pays in pays %}
-
-                            <li class="paysList">
-                                <a href="{{ path('destinations', {'pays':pays.nomPays}) }}">{{ pays.nomPays }}</a>
-
-                            </li>
-
-                        {% endfor %}
-                    </li>
-                </ul>
-            </li>
             <li><a href="{{ path('contact') }}">Contact</a></li>
         </ul>
     </nav>
@@ -64,7 +48,6 @@
     <ul class="navbar">
         <li><a href="{{ path('index') }}">Accueil</a></li>
         <li><a href="{{ path('presentation') }}">Présentation</a></li>
-        <li><a href="#" id="drop">Destinations</a></li>
         <li><a href="{{ path('contact') }}">Contact</a></li>
         <li><a href="{{ path('admin') }}">Admin</a></li>
     </ul>

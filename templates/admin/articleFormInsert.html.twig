@@ -5,29 +5,40 @@
 
 {% block content %}
 
+    {% for message in app.flashes('success') %}
+        <div class="alertFlash">
+            {{ message  }}
+        </div>
+    {% endfor %}
+
     <h1 class="articleInsertTitle">Ajouter un article</h1>
     {{ form_start(formArticleView, {'attr': {'class':'container'}}) }}
 
-    {{ form_label(formArticleView.titre, 'Titre', {'label_attr': {'class':'labelArticle labelTitre'}}) }}
-    {{ form_widget(formArticleView.titre, {'attr': {'class':'inputArticle inputTitre'}}) }}
+        {{ form_label(formArticleView.picture, 'Image', {'label_attr': {'class':'labelArticle labelPicture'}}) }}
+        {{ form_widget(formArticleView.picture, {'attr': {'class':'inputArticle inputPicture'}}) }}
 
-    {{ form_label(formArticleView.contenu, 'Contenu', {'label_attr': {'class':'labelArticle labelContenu'}}) }}
-    {{ form_widget(formArticleView.contenu, {'attr': {'class':'inputArticle inputContenu'}}) }}
+        {{ form_label(formArticleView.titre, 'Titre', {'label_attr': {'class':'labelArticle labelTitre'}}) }}
+        {{ form_widget(formArticleView.titre, {'attr': {'class':'inputArticle inputTitre'}}) }}
 
-    {{ form_label(formArticleView.date, 'Date', {'label_attr': {'class':'labelArticle labelDate'}}) }}
-    {{ form_widget(formArticleView.date, {'attr': {'class':'inputArticle inputDate'}}) }}
+        {{ form_label(formArticleView.contenu, 'Contenu', {'label_attr': {'class':'labelArticle labelContenu'}}) }}
+        {{ form_widget(formArticleView.contenu, {'attr': {'class':'inputArticle inputContenu'}}) }}
 
-    {{ form_label(formArticleView.user, 'Utilisateur', {'label_attr': {'class':'labelArticle labelUtilisateur'}}) }}
-    {{ form_widget(formArticleView.user, {'attr': {'class':'inputArticle inputUtilisateur'}}) }}
+        {{ form_label(formArticleView.date, 'Date', {'label_attr': {'class':'labelArticle labelDate'}}) }}
+        {{ form_widget(formArticleView.date, {'attr': {'class':'inputArticle inputDate'}}) }}
 
-    {{ form_label(formArticleView.categorie, 'Catégorie', {'label_attr': {'class':'labelArticle labelCategorie'}}) }}
-    {{ form_widget(formArticleView.categorie, {'attr': {'class':'inputArticle inputCategorie'}}) }}
+        {{ form_label(formArticleView.user, 'Utilisateur', {'label_attr': {'class':'labelArticle labelUtilisateur'}}) }}
+        {{ form_widget(formArticleView.user, {'attr': {'class':'inputArticle inputUtilisateur'}}) }}
 
-    {{ form_label(formArticleView.pays, 'Pays', {'label_attr': {'class':'labelArticle labelPays'}}) }}
-    {{ form_widget(formArticleView.pays, {'attr': {'class':'inputArticle inputPays'}}) }}
+        {{ form_label(formArticleView.categorie, 'Catégorie', {'label_attr': {'class':'labelArticle labelCategorie'}}) }}
+        {{ form_widget(formArticleView.categorie, {'attr': {'class':'inputArticle inputCategorie'}}) }}
 
-    {{ form_label(formArticleView.enregistrer, 'Enregistrer', {'label_attr': {'class':'labelArticle labelSubmit'}}) }}
-    {{ form_widget(formArticleView.enregistrer, {'attr': {'class':'inputArticleSubmit'}}) }}
+        {{ form_label(formArticleView.pays, 'Pays', {'label_attr': {'class':'labelArticle labelPays'}}) }}
+        {{ form_widget(formArticleView.pays, {'attr': {'class':'inputArticle inputPays'}}) }}
+
+        {{ form_label(formArticleView.enregistrer, 'Enregistrer', {'label_attr': {'class':'labelArticle labelSubmit'}}) }}
+        {{ form_widget(formArticleView.enregistrer, {'attr': {'class':'inputArticleSubmit'}}) }}
 
     {{ form_end(formArticleView) }}
+    <a href="{{ path('admin') }}">Retour</a>
+
 {% endblock %}

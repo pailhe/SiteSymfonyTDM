@@ -1,0 +1,20 @@
+.contactTitle{
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+}
+
+.container{
+    height: 515px;
+}
+
+.contactContenu{
+    font-size: 22px;
+    text-align: center;
+}
+
+.contactMail{
+    font-size: 26px;
+    text-align: center;
+}

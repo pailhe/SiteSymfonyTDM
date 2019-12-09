@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('assets/css/articleshow.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="articleContainer">
+            <p>
+                <a href="{{ path('articleFormUpdate', {'id' : article.id}) }}">Modifier</a>
+                <a href="{{ path('articleAdminDelete', {'id' : article.id}) }}">Supprimer</a>
+            </p>
+            <div class="imgContainer">
+                <img class="imgArticle" src="{{ asset('assets/img') }}/{{ article.picture }}" alt="image">
+            </div>
+            <h1 class="titleArticle">{{ article.titre }}</h1>
+            <div class="subtitleContainer">
+                <h2 class="subtitleArticle">Catégorie: {{ article.categorie.libelle }}</h2>
+                <h2 class="subtitleArticle">Écrit par: {{ article.user.username }}</h2>
+                <h2 class="subtitleArticle">Pays: {{ article.pays.nomPays }}</h2>
+            </div>
+            <p>{{ article.contenu|raw }}</p>
+            <p>
+                <a href="{{ path('articleFormUpdate', {'id' : article.id}) }}">Modifier</a>
+                <a href="{{ path('articleAdminDelete', {'id' : article.id}) }}">Supprimer</a>
+            </p>
+            <a href="{{ path('admin') }}">Retour</a>
+        </div>
+    </div>
+
+{% endblock %}

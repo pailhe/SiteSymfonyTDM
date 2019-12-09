@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block stylesheet %}<link rel="stylesheet" href="{{ asset('assets/css/styleAdminDelete.css') }}">{% endblock %}
+
+{% block title %}Bienvenue dans votre zone administrateur{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <p class="adminDelete">{{ 'Votre article a bien été supprimé' }}</p>
+    </div>
+    <a href="{{ path('admin') }}">Retour</a>
+{% endblock %}

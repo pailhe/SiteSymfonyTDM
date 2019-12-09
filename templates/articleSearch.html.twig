@@ -4,26 +4,30 @@
 {% endblock %}
 
 {% block content %}
-
     <div class="indexContainer">
-        {% for article in article %}
-            <div class="articleContainer">
-                <a href="{{ path('articleShow', {'id' : article.id}) }}">
+
+            {% for article in article %}
+
+                <div class="articleContainer">
+                    <a href="{{ path('articleShow', {'id' : article.id}) }}">
                     <div class="imgContainer">
                         <img class="imgArticle" src="{{ asset('assets/img') }}/{{ article.picture }}" alt="image">
                     </div>
                     <h1 class="titleArticle">{{ article.titre }}</h1>
                     <div class="subtitleContainer">
-                        <h2 class="subtitleArticle">Catégorie: {{ article.categorie.libelle }}</h2>
+                        <h2 class="subtitleArticle">Catégorie: {{ article.Categorie.libelle }}</h2>
                         <h2 class="subtitleArticle">Écrit par: {{ article.user.username }}</h2>
                         <h2 class="subtitleArticle">Pays: {{ article.pays.nomPays }}</h2>
                     </div>
                     <p>{{ article.contenu|striptags|slice(0, 755)|raw }} {{ "..." }} <a href="{{ path('articleShow',
-                            {'id' : article.id}) }}" class="linkArticle">Lire plus</a></p>
-                </a>
-            </div>
+                            {'id' : article.id}) }}" class="linkArticle">Lire plus</a> </p>
+                    </a>
+                </div>
 
-        {% endfor %}
+
+            {% endfor %}
+
     </div>
+    <a href="{{ path('index') }}">Retour</a>
 
 {% endblock %}

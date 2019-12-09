@@ -2,20 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65acc4bf-ec99-4f20-ad32-3dcf156ee62e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/articleInsert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/categorieInsert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/paysInsert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/articleList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/articleShow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/presentation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/styleAdminDelete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/styleContact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/stylePaysList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/articleAdminDelete.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/articleFormUpdate.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/articleShow.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/paysAdminDelete.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/paysList.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/articleSearch.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/articleSearchShow.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/articleShow.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/baseAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/FOSUserBundle/layout.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/FOSUserBundle/security/login_content.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/destinations.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/presentation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SiteSymfonyTDM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SiteSymfonyTDM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/articleInsert.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/articleInsert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/categorieInsert.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/categorieInsert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/paysInsert.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/paysInsert.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/styleAdmin.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styleAdmin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/styleBase.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styleBase.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/img/planisphereWeb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/planisphereWeb.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CategorieRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CategorieRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/MediaRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MediaRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/PaysRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PaysRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProfilRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProfilRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UtilisateurRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UtilisateurRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/articleFormInsert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/articleFormInsert.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/categorieFormInsert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/categorieFormInsert.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/paysFormInsert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/paysFormInsert.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +143,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
@@ -140,6 +177,8 @@
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/ckeditor-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
     </include_path>
@@ -148,12 +187,17 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Controller" />
+      <recent name="$PROJECT_DIR$/templates/bundles/FOSUserBundle/security" />
+      <recent name="$PROJECT_DIR$/templates/bundles/FOSUserBundle" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/admin" />
     </key>
@@ -190,6 +234,21 @@
       <workItem from="1565004782703" duration="4219000" />
       <workItem from="1565783164698" duration="3809000" />
       <workItem from="1565871968168" duration="4509000" />
+      <workItem from="1566218756911" duration="56946000" />
+      <workItem from="1567674993097" duration="6213000" />
+      <workItem from="1568288938218" duration="20000" />
+      <workItem from="1568305538731" duration="778000" />
+      <workItem from="1568644668429" duration="11270000" />
+      <workItem from="1568898663250" duration="3302000" />
+      <workItem from="1569916595731" duration="181000" />
+      <workItem from="1573138982221" duration="594000" />
+      <workItem from="1574412753692" duration="68000" />
+      <workItem from="1574426540168" duration="1026000" />
+      <workItem from="1574861427523" duration="603000" />
+      <workItem from="1574863358839" duration="141000" />
+      <workItem from="1574947188132" duration="1027000" />
+      <workItem from="1575294854462" duration="89000" />
+      <workItem from="1575363229062" duration="12851000" />
     </task>
     <servers />
   </component>

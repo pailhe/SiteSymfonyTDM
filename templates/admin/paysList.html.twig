@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block stylesheet %}<link rel="stylesheet" href="{{ asset('assets/css/stylePaysList.css') }}">{% endblock %}
+
+{% block title %}Bienvenue dans votre zone administrateur{% endblock %}
+
+{% block content %}
+
+    <h1 class="paysListTitle">La liste de vos pays</h1>
+    <ul>
+    {% for pays in pays %}
+
+        <li class="adminPaysList">
+            <p class="adminPaysListP">{{ pays.nomPays }} <a class="paysLink" href="{{ path('paysAdminDelete', {'id' :
+                    pays.id})
+                }}">Supprimer</a></p>
+        </li>
+
+    {% endfor %}
+    </ul>
+    <a href="{{ path('admin') }}">Retour</a>
+{% endblock %}

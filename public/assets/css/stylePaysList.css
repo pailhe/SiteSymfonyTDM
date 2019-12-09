@@ -1,0 +1,28 @@
+.paysListTitle{
+    text-align: center;
+    color: black;
+    margin-top: 0;
+}
+
+.adminPaysList{
+    background-color: white;
+    width: 310px;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.adminPaysListP{
+    color: black;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.paysLink{
+    font-size: 18px;
+    color: black;
+}
+
+ul{
+    margin-bottom: 0;
+}

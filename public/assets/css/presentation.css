@@ -1,0 +1,21 @@
+.presentationContainer{
+    margin:0 auto;
+    padding: 5px 20px;
+    background-color: white;
+    width: 80%;
+}
+
+.presentationTitle{
+    margin-top: 0;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.presentationSubtitle{
+    margin-top: 40px;
+}
+
+.presentationContenu{
+    font-size: 18px;
+}

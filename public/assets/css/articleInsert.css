@@ -50,3 +50,11 @@ body{
     width: 50%;
     margin: 0 auto;
 }
+
+.alertFlash{
+    width:100%;
+    background-color: darkseagreen;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 15px;
+}

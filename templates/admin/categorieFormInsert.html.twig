@@ -5,6 +5,12 @@
 
 {% block content %}
 
+    {% for message in app.flashes('success') %}
+        <div class="alertFlash">
+            {{ message  }}
+        </div>
+    {% endfor %}
+
     <h1 class="categorieInsertTitle">Ajouter une catégorie à vos articles</h1>
 
     {{ form_start(formCategorieView, {'attr': {'class':'container'}}) }}
@@ -15,4 +21,7 @@
     {{ form_label(formCategorieView.enregistrer, 'Enregistrer', {'label_attr': {'class':'labelCategorie'}}) }}
     {{ form_widget(formCategorieView.enregistrer, {'attr': {'class':'inputCategorieSubmit'}}) }}
 
-    {{ form_end(formCategorieView) }}{% endblock %}
+    {{ form_end(formCategorieView) }}
+    <a href="{{ path('admin') }}">Retour</a>
+
+{% endblock %}

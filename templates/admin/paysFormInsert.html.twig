@@ -5,6 +5,12 @@
 
 {% block content %}
 
+    {% for message in app.flashes('success') %}
+        <div class="alertFlash">
+            {{ message  }}
+        </div>
+    {% endfor %}
+
     <h1 class="paysInsertTitle">Ajouter des continents et pays</h1>
 
     {{ form_start(formPaysView, {'attr': {'class':'container'}}) }}
@@ -19,4 +25,6 @@
     {{ form_widget(formPaysView.enregistrer, {'attr': {'class':'inputPaysSubmit'}}) }}
 
     {{ form_end(formPaysView) }}
+    <a href="{{ path('admin') }}">Retour</a>
+
 {% endblock %}
